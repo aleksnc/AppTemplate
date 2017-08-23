@@ -69,6 +69,10 @@ html, body {
     min-height: 100vh;
 }
 
+.search_js{
+    display: none;
+}
+
 .btn {
     display: inline-block;
     width: 100%;
@@ -103,8 +107,6 @@ html, body {
     fill: #1d3a4c;
 }
 
-
-
 .btn--borderLight {
     border: 1px solid #fff;
 }
@@ -115,14 +117,15 @@ html, body {
 
 .mainBlock {
     background-color: #1d3a4c;
+    height: calc(100vh - 58px);
+}
+
+.mainBlock.notMenu {
     height: 100vh;
 }
 
-.mainBlock__wrapper {
-}
-
-.mainBlock__wrapper.active {
-    padding-bottom: 50px;
+.mainBlock.paddingTop {
+    padding-top: 50px;
 }
 
 .mainPage {
@@ -131,9 +134,6 @@ html, body {
     overflow: hidden;
     flex-direction: column;
     height: 100vh;
-}
-
-.mainPage__btn {
 }
 
 .mainPage__logo {
@@ -155,6 +155,41 @@ html, body {
 
 }
 
+.searchBlock__wrapper{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    display: none;
+}
+
+.searchBlock{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchBlock input{
+    border: none;
+    flex-grow: 1;
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+.searchBlock__btn{
+    border: none;
+    width: 37px;
+    padding: 5px;
+    margin-left: 5px;
+    background-color: #5d7e91;
+}
+
+
+.searchBlock__btn use{
+    fill: #fff;
+}
+
 @media (min-width: 1024px) {
     .mainBlock__wrapper {
         max-width: 320px;
@@ -165,4 +200,13 @@ html, body {
     .mainMenu{
         max-width: 320px;
     }
+}
+
+
+
+#map {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
