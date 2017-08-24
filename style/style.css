@@ -69,6 +69,10 @@ html, body {
     min-height: 100vh;
 }
 
+a{
+    color: #fff;
+}
+
 .search_js{
     display: none;
 }
