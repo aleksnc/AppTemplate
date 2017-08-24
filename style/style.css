@@ -63,8 +63,8 @@ input[type="checkbox"] {
 html, body {
     margin: 0;
     padding: 0;
-    color: #5A5A5A;
-    font-family: "OpenSans";
+    color: #fff;
+    font-family: monospace;
     font-size: 14px;
     min-height: 100vh;
 }
@@ -124,7 +124,7 @@ html, body {
     height: 100vh;
 }
 
-.mainBlock.paddingTop {
+.map__wrapper.paddingTop {
     padding-top: 50px;
 }
 
@@ -158,13 +158,12 @@ html, body {
 .searchBlock__wrapper{
     top: 0;
     left: 0;
-    position: fixed;
+    position: relative;
     width: 100%;
-    display: none;
+    /*display: none;*/
 }
 
 .searchBlock{
-    padding: 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -185,9 +184,12 @@ html, body {
     background-color: #5d7e91;
 }
 
-
 .searchBlock__btn use{
     fill: #fff;
+}
+
+.searchPage__wrapper{
+    padding: 5px;
 }
 
 @media (min-width: 1024px) {

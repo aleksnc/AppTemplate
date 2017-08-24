@@ -34,12 +34,16 @@ function pageGET() {
             appendPage('_settings.html');
             break;
 
+        case 'messages.html':
+            appendPage('_messages.html');
+            break;
+
         case 'message.html':
             appendPage('_message.html');
             break;
 
         case 'search.html':
-            appendPage('_maps.html');
+            appendPage('_search.html');
             break;
 
         default:
@@ -106,15 +110,15 @@ function historyAPI() {
 }
 
 function searchBlock(){
-    if($('.search_js').find('div').hasClass('active')){
-        $('.mainBlock').addClass('paddingTop');
-
-        $('.searchBlock__wrapper').slideDown();
-    } else{
-        $('.mainBlock').removeClass('paddingTop');
-
-        $('.searchBlock__wrapper').slideUp();
-    }
+//    if($('.search_js').find('div').hasClass('active')){
+//        $('.map__wrapper').addClass('paddingTop');
+//
+//        $('.searchBlock__wrapper').slideDown();
+//    } else{
+//        $('.map__wrapper').removeClass('paddingTop');
+//
+//        $('.searchBlock__wrapper').slideUp();
+//    }
 };
 
 $(document).ready(function () {
